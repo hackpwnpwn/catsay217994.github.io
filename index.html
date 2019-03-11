@@ -1,34 +1,270 @@
----
----
+<!DOCTYPE html><html><head>
+<style>
+@import url("https://fonts.googleapis.com/css?family=Muli");
+* {
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+body {
+    background: url(lighten4.jpg);
+    background-size: cover;
+}
+#container {
+    width: auto;
+    height: auto;
+    margin-top: 120px;
+    perspective: 800px;
+    text-align: center;
+}
+#container h1 {
+    color: #ECF6CE;
+    margin-bottom: 30px;
+}
+#container > hr {
+    border: none;
+    border: 1px solid #fff;
+    width: 80%;
+}
+.card {
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+    width: 220px;
+    height: 260px;
+    opacity: 0.85;
+}
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    border-radius: 5px;
+}
+.front {
+    tranform: rotateY(0deg);
+    background: linear-gradient(to bottom right, #84DD63, #009970);
+    text-align: center;
+    padding: 30px;
+}
+.back {
+    background: linear-gradient(to bottom right, #009970, #84DD63);
+    transform: rotateY(180deg);
+    padding: 40px 15px;
+    color: #fff;
+}
+.card:hover .front {
+    transform: rotateY(-180deg);
+}
+.card:hover .back {
+    transform: rotateY(0deg);
+}
+.front .contact {
+    height: 120px;
+    width: 120px;
+    border: 5px solid #B2DBBF;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.front .name {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+}
+.front .job {
+    color: #fff;
+}
+.front hr {
+    border: none;
+    color: #B2DBBF;
+    border: 1px solid;
+}
+.back .icon {
+    fill: currentColor;
+    color: inherit;
+    height: 33px;
+    width: 33px;
+    margin-top: 15px;
+    color: white;
+}
+.back .icon:hover {
+    cursor: pointer;
+    color: #648767;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
 
-<div class="main-content index-page clearfix ">
-	<div class="post-lists">
-		<div class="post-lists-body">
-      {% for posts in paginator.posts %}
-		<div class="post-list-item">
-				<div class="post-list-item-container">
-					 <div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');"></div>
-          	<a href="{{ posts.url }}">
-	             <div class="item-desc">
-		<p>{{ posts.content | strip_html | strip_newlines | truncate: 100 }}</p>
-						</div>
-					</a>
-					<div class="item-slant reverse-slant  bg-{{ posts.background }}"></div>
-					<div class="item-slant">	<div class="liberxue-title">
-				原创
-				</div></div>
-					<div class="item-label">
-						<div class="item-title"><a href="{{ posts.url }}" title="访问 {{ posts.title }}">{{ posts.title }}</a></div>
-						<div class="item-meta clearfix">
-						<div class="item-meta-ico bg-ico-book" style="background: url('style/images/bg-ico.png') no-repeat;background-size: 40px auto;"></div>
-             <div class="item-meta-cat">
-				 <a href="/tags#{{ posts.category }}" title="访问 {{ posts.category }}" data-hover="{{ posts.category }}">{{ posts.category }}</a>
-				 <a href="/archives#{{ posts.date | date: "%Y"}}" title="访问 {{ posts.date | date: "%Y"}}" data-hover="{{ posts.date | date: "%F %H:%M"}}">{{ posts.date | date: "%F %H:%M"}}</a></div>
-						</div>
-					</div>
-				</div>
-      </div>
-       {% endfor %}
-	</div>
-	</div>
-  {% include pagination.html %}
+<script type="text/javascript" src="http://wow.techbrood.com/libs/jquery/jquery-2.1.1.min.js"></script><div id='container'>
+    <h1> Our Team </h1>
+    <hr>
+    <div class='card'>
+        <div class='front'>
+            <img src='wzx.jpg' class='contact' />
+            <span class='name'>王泽西</span>
+            <hr>
+            <span class='job'> - 安全小菜鸡 - </span>
+        </div>
+        <div class='back'>
+            <span>Skills:</span>
+            <p>C/C++、PHP、IOS、Andriod、渗透测试、Go、CTF搅屎棍</p>
+			<span>Label:</span>
+            <p>安安静静美少男</p>
+			<!--
+            <span>Social media </span>
+            <div class='icons'>
+                <svg class="icon" id="twitter-icon" viewBox="0 0 512 512">
+                    <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"
+                    />
+                </svg>
+            </div>
+			-->
+        </div>
+    </div>
+    <div class='card'>
+        <div class='front'>
+            <img src='xbb.png' class='contact' />
+            <span class='name'>徐彬彬</span>
+            <hr>
+            <span class='job'> - DCN、Cisco - </span>
+        </div>
+        <div class='back'>
+            <span>Skills:</span>
+            <p>网工大佬</p>
+			<span>Label:</span>
+            <p>共享单车徐彬彬</p>
+        </div>
+    </div>
+    <div class='card'>
+        <div class='front'>
+            <img src='rym.png' class='contact' />
+            <span class='name'>茹禹铭</span>
+            <hr>
+            <span class='job'>- Python、C/C++ -</span>
+        </div>
+        <div class='back'>
+            <span>Skills:</span>
+            <p> CTF Misc、Crypto</p>
+			<span>Label:</span>
+            <p>爱上考勤茹禹铭</p>
+        </div>
+    </div>
+    <div class='card'>
+        <div class='front'>
+            <img src='ljb.png' class='contact' />
+            <span class='name'>刘锦波</span>
+            <hr>
+            <span class='job'>- C/C++、Python、Web开发 -</span>
+        </div>
+        <div class='back'>
+            <span>Skills:</span>
+            <p>渗透测试</p>
+
+			<span>Label:</span>
+            <p>健身教练刘锦波</p>
+        </div>
+    </div>
+	<div class='card'>
+        <div class='front'>
+            <img src='rsf.png' class='contact' />
+            <span class='name'>任帅飞</span>
+            <hr>
+            <span class='job'>- Android开发、逆向 -</span>
+        </div>
+        <div class='back'>
+            <span>Skills:</span>
+            <p>Android</p>
+
+			<span>Label:</span>
+            <p>人帅风骚任帅飞</p>
+        </div>
+    </div></br>
+	
+	    <div class='card'>
+        <div class='front'>
+            <img src='default.png' class='contact' />
+            <span class='name'>暂定</span>
+            <hr>
+            <span class='job'>- xxxxxx -</span>
+        </div>
+        <div class='back'>
+            <span>Skills:</span>
+            <p>渗透测试</p>
+
+			<span>Label:</span>
+            <p>健身教练刘锦波</p>
+        </div>
+    </div>
+	    <div class='card'>
+        <div class='front'>
+            <img src='default.png' class='contact' />
+            <span class='name'>暂定</span>
+            <hr>
+            <span class='job'>- xxxxxx -</span>
+        </div>
+        <div class='back'>
+            <span>Skills:</span>
+            <p>渗透测试</p>
+
+			<span>Label:</span>
+            <p>健身教练刘锦波</p>
+        </div>
+    </div>
+	    <div class='card'>
+        <div class='front'>
+            <img src='default.png' class='contact' />
+            <span class='name'>暂定</span>
+            <hr>
+            <span class='job'>- xxxxxx -</span>
+        </div>
+        <div class='back'>
+            <span>Skills:</span>
+            <p>渗透测试</p>
+
+			<span>Label:</span>
+            <p>健身教练刘锦波</p>
+        </div>
+    </div>
+	    <div class='card'>
+        <div class='front'>
+            <img src='default.png' class='contact' />
+            <span class='name'>暂定</span>
+            <hr>
+            <span class='job'>- xxxxxx -</span>
+        </div>
+        <div class='back'>
+            <span>Skills:</span>
+            <p>渗透测试</p>
+
+			<span>Label:</span>
+            <p>健身教练刘锦波</p>
+        </div>
+    </div>
+	<div class='card'>
+        <div class='front'>
+            <img src='default.png' class='contact' />
+            <span class='name'>暂定</span>
+            <hr>
+            <span class='job'>- xxxxxx -</span>
+        </div>
+        <div class='back'>
+            <span>Skills:</span>
+            <p>渗透测试</p>
+
+			<span>Label:</span>
+            <p>健身教练刘锦波</p>
+        </div>
+    </div>
+	
+	
+</div>
+<script>
+
+</script>
+
+</body>
+</html>
