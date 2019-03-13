@@ -1,271 +1,702 @@
-<!DOCTYPE html><html><head>
-<style>
-@import url("https://fonts.googleapis.com/css?family=Muli");
-* {
-    box-sizing: border-box;
-    font-family: 'Muli', sans-serif;
-}
-body {
-    background: url(lighten4.jpg);
-    background-size: cover;
-}
-#container {
-    width: auto;
-    height: auto;
-    margin-top: 120px;
-    perspective: 800px;
-    text-align: center;
-}
-#container h1 {
-    color: #ECF6CE;
-    margin-bottom: 30px;
-}
-#container > hr {
-    border: none;
-    border: 1px solid #fff;
-    width: 80%;
-}
-.card {
-    margin: 10px;
-    display: inline-block;
-    position: relative;
-    width: 220px;
-    height: 260px;
-    opacity: 0.85;
-}
-.front,
-.back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    transition: transform 300ms;
-    transition-timing-function: linear;
-    border-radius: 5px;
-}
-.front {
-    tranform: rotateY(0deg);
-    background: linear-gradient(to bottom right, #84DD63, #009970);
-    text-align: center;
-    padding: 30px;
-}
-.back {
-    background: linear-gradient(to bottom right, #009970, #84DD63);
-    transform: rotateY(180deg);
-    padding: 40px 15px;
-    color: #fff;
-}
-.card:hover .front {
-    transform: rotateY(-180deg);
-}
-.card:hover .back {
-    transform: rotateY(0deg);
-}
-.front .contact {
-    height: 120px;
-    width: 120px;
-    border: 5px solid #B2DBBF;
-    border-radius: 50%;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-.front .name {
-    display: inline-block;
-    font-size: 18px;
-    color: #fff;
-}
-.front .job {
-    color: #fff;
-}
-.front hr {
-    border: none;
-    color: #B2DBBF;
-    border: 1px solid;
-}
-.back .icon {
-    fill: currentColor;
-    color: inherit;
-    height: 33px;
-    width: 33px;
-    margin-top: 15px;
-    color: white;
-}
-.back .icon:hover {
-    cursor: pointer;
-    color: #648767;
-}
-</style>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>河南司法警官职业学院信安团队</title>
+
+
+<!-- FD:homeproxy-home:homeproxy/home/startup.vm:START --><!-- FD:homeproxy-home:homeproxy/home/startup.vm:startup.schema:START --><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="baidu-site-verification" content="OyUb4RVdSe" />
+    <meta name="renderer" content="webkit" />
+  
+    <title>河南司法警官学院信安</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+ 	<link rel="icon" href="https://i.alipayobjects.com/common/favicon/favicon.ico" type="image/x-icon">
+
+
+  
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 100%;
+        }
+
+        ul, ol, li {
+            list-style: none;
+        }
+
+        em, i {
+            font-style: normal;
+        }
+
+        img {
+            border: none;
+        }
+
+        input, img {
+            vertical-align: middle;
+        }
+
+        body {
+            background: #fff;
+            color: #666;
+            font-size: 14px;
+            font-family: arial;
+        }
+
+        a {
+            color: #666666;
+            text-decoration: none;
+        }
+
+        html, body {
+            background: #f9f9f9;
+            width: 100%;
+            height: 100%;
+            font-family: Helvetica, sans-serif;
+            -webkit-text-size-adjust: none;
+        }
+
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        textarea.fixAndroidKeyboard:focus, input.fixAKeyboard:focus {
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+            -webkit-user-modify: read-write-plaintext-only;
+        }
+
+        .noscroll {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .app-dom {
+            width: 100%;
+        }
+
+        .clearfix:after {
+            display: block;
+            content: '';
+            clear: both;
+            visibility: hidden;
+        }
+    </style>
+
+    
+
+    <style>
+        /*@font-face {*/
+        /*font-family: 'iconfont';*/
+        /*src: url('//at.alicdn.com/t/font_1436009778_9049127.eot'); /!* IE9*!/*/
+        /*src: url('//at.alicdn.com/t/font_1436009778_9049127.eot?#iefix') format('embedded-opentype'), /!* IE6-IE8 *!/ url('//at.alicdn.com/t/font_1436009778_9049127.woff') format('woff'), /!* chrome、firefox *!/ url('//at.alicdn.com/t/font_1436009778_9049127.ttf') format('truetype'), /!* chrome、firefox、opera、Safari, Android, iOS 4.2+*!/ url('//at.alicdn.com/t/font_1436009778_9049127.svg#iconfont') format('svg'); /!* iOS 4.1- *!/*/
+        /*}*/
+
+        /*.iconfont {*/
+        /*font-family: "iconfont" !important;*/
+        /*font-size: 32px;*/
+        /*font-style: normal;*/
+        /*-webkit-font-smoothing: antialiased;*/
+        /*-webkit-text-stroke-width: 0.2px;*/
+        /*-moz-osx-font-smoothing: grayscale;*/
+        /*}*/
+
+        body {
+            font: 12px/1.5 "Microsoft YaHei", tahoma, arial, Hiragino Sans GB, \5b8b\4f53;
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 20px;
+            left: 0px;
+            z-index: 999;
+        }
+
+        .nav {
+            width: 80%;
+            height: 30px;
+            line-height: 30px;
+            margin: 0 auto;
+        }
+
+
+        /*.logo {
+            float: left;
+            background-image: url(https://img.alicdn.com/tps/TB17ghmIFXXXXXAXFXXXXXXXXXX.png);
+            display: block;
+            width: 70px;
+            height: 25px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 70px;
+        }*/
+
+        .entry {
+            float: right;
+            color: #fff;
+        }
+
+        .entry .state {
+            color: #bfbfbf;
+        }
+
+        .entry a {
+            font-size: 12px;
+            color: #fff;
+            margin: 0 5px;
+        }
+
+        .entry a:hover {
+            color: #00bbee;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+        }
+
+        .content {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;;
+        }
+
+        .wrap {
+            position: absolute;
+            left: 0;
+            top: 20%;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .slogan {
+            width: 600px;
+            height: 200px;
+            background:  url(img/logo.png) no-repeat 0 0;/*你是中心*/
+            display: inline-block;
+            background-size: 600px;
+        }
+
+        .mid {
+            width: 100%;
+        }
+
+        .main-entry {
+            width: 550px;
+            height: 50px;
+            margin: 15px auto 0;
+        }
+
+        .main-entry a {
+            display: block;
+            text-decoration: none;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            height: 50px;
+            width: 170px;
+            color: #ffffff;
+            line-height: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-entry a .title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            padding-left: 18px;
+        }
+
+        .main-entry a .title i {
+            position: absolute;
+            left: 20px;
+            top: 14px;
+            background: url(https://img.alicdn.com/tps/TB1uh30IpXXXXXKXVXXXXXXXXXX.png) no-repeat 0 0;
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-size: 24px;
+        }
+
+        .main-entry a .title .seller {
+            background-image: url(https://img.alicdn.com/tps/TB12JNkIFXXXXXBXXXXXXXXXXXX.png);
+        }
+
+        .main-entry a .title .developer {
+            background-image: url(https://zos.alipayobjects.com/rmsportal/neqhNGwxBXBmhVY.png);
+        }
+
+        .main-entry s {
+            background-color: #00a3ee;
+            opacity: .9;
+            display: block;
+            border-radius: 8px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        .main-entry a:hover s {
+            background-color: #00aaee;
+            opacity: 1;
+        }
+
+        a.personal-login,
+        a.seller-login
+        {
+            margin-left: 20px;
+            transition: all .3s ease-in-out;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+        }
+        a.seller-login .seller-entry {
+            display: none;
+            z-index: 2;
+            position: relative;
+            height: 50px;   /*2个签3个字*/
+        }
+        a.seller-login .inerval-line {
+            display: none;
+            width: 150px;
+            margin: 0 auto;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            height: 0;
+            z-index: 2;
+        }
+        a.seller-login:hover{
+            height: 150px;
+            margin-top: -25px;
+        }
+        a.seller-login:hover .title{
+            display: none;
+        }
+        a.seller-login:hover .seller-entry,
+        a.seller-login:hover .inerval-line
+        {
+            display: block;
+        }
+
+        .alipay-app {
+            text-align: center;
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            z-index: 3;
+            width: 100%;
+        }
+
+        .alipay-app .ma {
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .alipay-app img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .alipay-app p {
+            line-height: 30px;
+            height: 30px;
+            color: #ffffff;
+            margin: 5px 0 10px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 65px;
+            background-color: white;
+            z-index: 99;
+        }
+
+        .nav-links {
+            width: 99%;
+            height: 20px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .footer ul {
+            padding-left: 5px;
+        }
+
+        .footer li {
+            display: inline-block;
+            margin: 2px;
+        }
+
+        .footer li a {
+            color: #666;
+        }
+
+        .ownership {
+            text-align: center;
+            height: 10px;
+            line-height: 5px;
+        }
+
+        .nav-icons {
+            width: 250px;
+            height: 30px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .nav-icons a {
+            width: 20px;
+            display: block;
+            float: left;
+            margin-right: 5px;
+            height: 28px;
+            background: url(https://img.alicdn.com/tps/TB1.cMTIpXXXXbLXVXXXXXXXXXX.png) no-repeat 0 0;
+        }
+
+        a.pic1 {
+            background-position: 0px -5px;
+            width: 18px;
+        }
+
+        a.pic1:hover {
+            background-position: 1px -28px;
+            width: 18px;
+        }
+
+        a.pic2 {
+            background-position: -33px -5px;
+            width: 40px;
+        }
+
+        a.pic2:hover {
+            background-position: -32px -28px;
+            width: 40px;
+        }
+
+        a.pic3 {
+            background-position: -74px -5px;
+            width: 33px;
+        }
+
+        a.pic3:hover {
+            background-position: -73px -28px;
+            width: 33px;
+        }
+
+        a.pic4 {
+            background-position: -115px -5px;
+            width: 18px;
+        }
+
+        a.pic4:hover {
+            background-position: -114px -28px;
+            width: 18px;
+        }
+
+        a.pic5 {
+            background-position: -135px -5px;
+            width: 31px;
+        }
+
+        a.pic5:hover {
+            background-position: -134px -28px;
+            width: 31px;
+        }
+
+
+        a.pic7 {
+            background-position: -200px -5px;
+            width: 20px;
+        }
+
+        a.pic7:hover {
+            background-position: -200px -26px;
+            width: 20px;
+        }
+
+
+      	#ServerNum,#ServerNum p {
+			line-height: 10px;
+			text-align: center;
+			color: white;
+			height: 10px;
+		}
+
+
+        /*slide*/
+        .front, .items, .item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .back {
+            bottom: 70px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .items {
+            overflow: visible;
+        }
+
+        .item {
+            background: #fff none no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            display: none;
+        }
+        
+        
+        	
+       
+        
+    </style>
+    
+ 	
+    <!--[if lte IE 8]>
+    <style>
+        .slogan, .main-entry a .title i, .logo {
+            background-image: none !important;
+        }
+        .slogan {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB1POhqIFXXXXXbXFXXXXXXXXXX.png", sizingMethod="scale");
+        }
+
+        .main-entry a .title i {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB1uh30IpXXXXXKXVXXXXXXXXXX.png", sizingMethod="scale");
+        }
+
+        .main-entry a .title .seller {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB12JNkIFXXXXXBXXXXXXXXXXXX.png", sizingMethod="scale");
+        }
+
+        .logo {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB17ghmIFXXXXXAXFXXXXXXXXXX.png", sizingMethod="scale");
+        }
+
+        .item1 {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB1h9xxIFXXXXbKXXXXXXXXXXXX.jpg", sizingMethod="scale");
+        }
+
+        .item2 {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB1pfG4IFXXXXc6XXXXXXXXXXXX.jpg", sizingMethod="scale");
+        }
+
+        .item3 {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://img.alicdn.com/tps/TB1sXGYIFXXXXc5XpXXXXXXXXXX.jpg", sizingMethod="scale");
+        }
+    </style>
+    <![endif]-->
+	
 </head>
 <body>
-
-<script type="text/javascript" src="http://wow.techbrood.com/libs/jquery/jquery-2.1.1.min.js"></script><div id='container'>
-    <h1> Our Team </h1>
-    <hr>
-    <div class='card'>
-        <div class='front'>
-            <img src='wzx.jpg' class='contact' />
-            <span class='name'>王泽西</span>
-            <hr>
-            <span class='job'> - 安全小菜鸡 - </span>
-        </div>
-        <div class='back'>
-            <span>Skills:</span>
-            <p>C/C++、PHP、IOS、Andriod、渗透测试、Go、CTF搅屎棍</p>
-			<span>Label:</span>
-            <p>安安静静美少男</p>
-			<!--
-            <span>Social media </span>
-            <div class='icons'>
-                <svg class="icon" id="twitter-icon" viewBox="0 0 512 512">
-                    <path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"
-                    />
-                </svg>
+<div class="main">
+    <div class="header">
+        <div class="nav">
+            <div class="logo"></div>
+            <div class="entry">
+                
+                
+				
+                	
+				
+                
             </div>
-			-->
         </div>
     </div>
-    <div class='card'>
-        <div class='front'>
-            <img src='xbb.png' class='contact' />
-            <span class='name'>徐彬彬</span>
-            <hr>
-            <span class='job'> - DCN、Cisco - </span>
+    <div class="container">
+        <div class="content">
+            <div class="wrap">
+                <div class="slogan"></div>
+                <div class="mid">
+                    <div class="main-entry">
+                        <a href="javascript:;" class="developer-login"><span class="title"><i
+                                class="developer"></i>Home</span><s></s></a>
+                        <a href="javascript:;" class="seller-login">
+                            <li class="title"><i class="seller"></i>教学视频</li>
+                           
+                           <li class="seller-entry python">Python<center><hr width="85%" color="#00BBEE"></center></li>
+                            
+                            <li class="seller-entry c">C/C++<center><hr width="85%" color="#00BBEE"></center></li><s></s>
+                           
+                            <li class="seller-entry java">Java</li><s></s>
+                        </a>
+                        <a href="javascript:;" class="personal-login"><span class="title"><i
+                                class="personal"></i>比赛平台</span><s></s></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class='back'>
-            <span>Skills:</span>
-            <p>网工大佬</p>
-			<span>Label:</span>
-            <p>共享单车徐彬彬</p>
+        <div class="back">
+ 			
+            <div class="items">
+                <div class="item item1"><img src="img/003.jpg"></div>
+                <div class="item item2"><img src="img/bg3.jpg"></div>
+                <div class="item item3"><img src="img/001.jpg"></div>
+            </div>
+          	
         </div>
     </div>
-    <div class='card'>
-        <div class='front'>
-            <img src='rym.png' class='contact' />
-            <span class='name'>茹禹铭</span>
-            <hr>
-            <span class='job'>- Python、C/C++ -</span>
+    <div class="footer">
+ 		
+        <div class="nav-links">
+          
         </div>
-        <div class='back'>
-            <span>Skills:</span>
-            <p> CTF Misc、Crypto</p>
-			<span>Label:</span>
-            <p>爱上考勤茹禹铭</p>
+        <div class="ownership">
+            <span>河南司法警官职业学院信息技术应用系</span>
         </div>
-    </div>
-    <div class='card'>
-        <div class='front'>
-            <img src='ljb.png' class='contact' />
-            <span class='name'>刘锦波</span>
-            <hr>
-            <span class='job'>- C/C++、Python、Web开发 -</span>
-        </div>
-        <div class='back'>
-            <span>Skills:</span>
-            <p>渗透测试</p>
 
-			<span>Label:</span>
-            <p>健身教练刘锦波</p>
-        </div>
+      	
+		
     </div>
-	<div class='card'>
-        <div class='front'>
-            <img src='rsf.png' class='contact' />
-            <span class='name'>任帅飞</span>
-            <hr>
-            <span class='job'>- Android开发、逆向 -</span>
-        </div>
-        <div class='back'>
-            <span>Skills:</span>
-            <p>Android</p>
-
-			<span>Label:</span>
-            <p>人帅风骚任帅飞</p>
-        </div>
-    </div></br>
-	
-	    <div class='card'>
-        <div class='front'>
-            <img src='cll.png' class='contact' />
-            <span class='name'>陈亮亮</span>
-            <hr>
-            <span class='job'>- 渗透测试 -</span>
-        </div>
-        <div class='back'>
-            <span>Skills:</span>
-            <p>渗透测试</p>
-
-			<span>Label:</span>
-            <p>司法警官陈亮亮</p>
-        </div>
-    </div>
-	    <div class='card'>
-        <div class='front'>
-            <img src='default.png' class='contact' />
-            <span class='name'>暂定</span>
-            <hr>
-            <span class='job'>- xxxxxx -</span>
-        </div>
-        <div class='back'>
-            <span>Skills:</span>
-            <p>渗透测试</p>
-
-			<span>Label:</span>
-            <p>健身教练刘锦波</p>
-        </div>
-    </div>
-	    <div class='card'>
-        <div class='front'>
-            <img src='default.png' class='contact' />
-            <span class='name'>暂定</span>
-            <hr>
-            <span class='job'>- xxxxxx -</span>
-        </div>
-        <div class='back'>
-            <span>Skills:</span>
-            <p>渗透测试</p>
-
-			<span>Label:</span>
-            <p>健身教练刘锦波</p>
-        </div>
-    </div>
-	    <div class='card'>
-        <div class='front'>
-            <img src='default.png' class='contact' />
-            <span class='name'>暂定</span>
-            <hr>
-            <span class='job'>- xxxxxx -</span>
-        </div>
-        <div class='back'>
-            <span>Skills:</span>
-            <p>渗透测试</p>
-
-			<span>Label:</span>
-            <p>健身教练刘锦波</p>
-        </div>
-    </div>
-	<div class='card'>
-        <div class='front'>
-            <img src='default.png' class='contact' />
-            <span class='name'>暂定</span>
-            <hr>
-            <span class='job'>- xxxxxx -</span>
-        </div>
-        <div class='back'>
-            <span>Skills:</span>
-            <p>渗透测试</p>
-
-			<span>Label:</span>
-            <p>健身教练刘锦波</p>
-        </div>
-    </div>
-	
-	
 </div>
+<script src="https://t.alipayobjects.com/images/rmsweb/T19ctgXcRlXXXXXXXX.js"></script>
 <script>
 
-</script>
+    var slideEle = slider($('.items'));
 
+    function slider(elem) {
+        var items = elem.children(),
+                max = items.length - 1,
+                animating = false,
+                currentElem,
+                nextElem,
+                pos = 0;
+
+        sync();
+
+        return {
+            next: function () {
+                move(1);
+            },
+            prev: function () {
+                move(-1);
+            },
+            itemsNum: items && items.length
+        };
+
+        function move(dir) {
+            if (animating) {
+                return;
+            }
+            if (dir > 0 && pos == max || dir < 0 && pos == 0) {
+                if (dir > 0) {
+                    nextElem = elem.children('div').first().remove();
+                    nextElem.hide();
+                    elem.append(nextElem);
+                } else {
+                    nextElem = elem.children('div').last().remove();
+                    nextElem.hide();
+                    elem.prepend(nextElem);
+                }
+                pos -= dir;
+                sync();
+            }
+            animating = true;
+            items = elem.children();
+            currentElem = items[pos + dir];
+            $(currentElem).fadeIn(400, function () {
+                pos += dir;
+                animating = false;
+            });
+        }
+
+        function sync() {
+            items = elem.children();
+            for (var i = 0; i < items.length; ++i) {
+                items[i].style.display = i == pos ? 'block' : '';
+            }
+        }
+
+    }
+
+    if (slideEle.itemsNum && slideEle.itemsNum > 1) {
+        setInterval(function () {
+            slideEle.next();
+        }, 4000)
+    }
+
+
+</script>
+<script>
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+	
+    //cookie记录个人登录标记为1,商家登录标记为2
+    $(".personal-login").click(function () {
+        setCookie("_n_h_n_option", "1", 365);
+        location.href = "2285826324";
+    });
+
+    $(".seller-login").click(function (e) {
+        var target = $(e.target);
+        if (target.hasClass('python')) 
+        {
+            location.href = "2285826324";
+        } 
+        else if (target.hasClass('c')) 
+        {
+            location.href = "2285826324";
+        }
+        else if (target.hasClass('java')) 
+        {
+            location.href = "2285826324";
+        }
+    });
+    $(".developer-login").click(function () {
+        location.href = "2285826324";
+    });
+	
+
+</script>
 </body>
-</html>
+</html><!-- FD:homeproxy-home:homeproxy/home/startup.vm:startup.schema:END --><!-- FD:homeproxy-home:homeproxy/home/startup.vm:END -->
+
