@@ -11,7 +11,7 @@
     <title>河南司法警官学院信安</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
- 	<link rel="icon" href="https://i.alipayobjects.com/common/favicon/favicon.ico" type="image/x-icon">
+ 	<link rel="icon" href="bitbug_favicon.ico" type="image/x-icon">
 
 
   
@@ -271,7 +271,7 @@
             opacity: 1;
         }
 
-        a.personal-login,
+        a.pk,
         a.seller-login
         {
             margin-left: 20px;
@@ -553,7 +553,7 @@
                 <div class="slogan"></div>
                 <div class="mid">
                     <div class="main-entry">
-                        <a href="javascript:;" class="developer-login"><span class="title"><i
+                        <a href="javascript:;" class="home"><span class="title"><i
                                 class="developer"></i>Home</span><s></s></a>
                         <a href="javascript:;" class="seller-login">
                             <li class="title"><i class="seller"></i>教学视频</li>
@@ -564,7 +564,7 @@
                            
                             <li class="seller-entry java">Java</li><s></s>
                         </a>
-                        <a href="javascript:;" class="personal-login"><span class="title"><i
+                        <a href="javascript:;" class="pk"><span class="title"><i
                                 class="personal"></i>比赛平台</span><s></s></a>
                     </div>
                 </div>
@@ -671,28 +671,28 @@
 
 	
     //cookie记录个人登录标记为1,商家登录标记为2
-    $(".personal-login").click(function () {
+    $(".pk").click(function () {
         setCookie("_n_h_n_option", "1", 365);
-        location.href = "2285826324";
+        location.href = "game/index.html";
     });
 
     $(".seller-login").click(function (e) {
         var target = $(e.target);
         if (target.hasClass('python')) 
         {
-            location.href = "2285826324";
+            location.href = "python/index.html";
         } 
         else if (target.hasClass('c')) 
         {
-            location.href = "2285826324";
+            location.href = "c/index.html";
         }
         else if (target.hasClass('java')) 
         {
-            location.href = "2285826324";
+            location.href = "java/index.html";
         }
     });
-    $(".developer-login").click(function () {
-        location.href = "2285826324";
+    $(".home").click(function () {
+        location.href = "team/index.html";
     });
 	
 
