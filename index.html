@@ -673,7 +673,7 @@
     //cookie记录个人登录标记为1,商家登录标记为2
     $(".pk").click(function () {
         setCookie("_n_h_n_option", "1", 365);
-        location.href = "game/index.html";
+        location.href = "hongmeng/index.html";
     });
 
     $(".seller-login").click(function (e) {
@@ -690,10 +690,7 @@
         {
             location.href = "java/index.html";
         }
-		else if (target.hasClass('pk')) 
-        {
-            location.href = "hongmeng/index.html";
-        }
+
     });
     $(".home").click(function () {
         location.href = "team/index.html";
