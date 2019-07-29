@@ -1332,6 +1332,7 @@ ul#additional_links li:after {
   font-size: 3.25rem;
   text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
    background: url(../img/maintext3.png) center top no-repeat;
+   background-size:300% 300%;
    height:335px;
    width:100%;
   
